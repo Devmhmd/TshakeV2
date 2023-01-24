@@ -1,28 +1,19 @@
 {
-    "name": "سورس تشاكي",
-    "description": "تشغيل سورس تشاكي عهيروكو",
-    "repository": "https://github.com/Devmhmd/TshakeV2",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg",
-    "keywords": ["virus", "python", "docker"],
-    "stack": "container",
-    "env": {
-      "TOKEN": {
-        "description": "توكنك",
-        "value": "",
-      },
-      "SUDO": {
-        "description": "ايديك",
-        "value": "",
-      }
+  "logo":"https://d.top4top.io/p_25768n4s71.jpg",
+  "name": "source تشاكي",
+  "description": "تنصيب سورس تشاكي علي هيروكو",
+  "stack": "container",
+  "env": {
+    "TOKEN": {
+      "description": "توكنك ",
+      "value": ""
     },
-    "buildpacks": [{
+    "SUDO": {
+      "description": "ايديك",
+      "value": ""
+    }
+  },
+  "buildpacks": [{
     "url": "https://github.com/heroku/heroku-buildpack-python.git"
-    }]
-      "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "free"
-          }
-      },
-      "stack": "container"
-  }
+  }]
+}
