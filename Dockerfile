@@ -14,7 +14,8 @@ RUN python3.7 -m pip install -U tgcrypto
 RUN python3.7 -m pip install redis
 RUN apt-get install redis-server -y
 RUN apt install curl -y
-RUN curl -sL https://raw.githubusercontent.com/Unitech/pm2/master/packager/setup.deb.sh | sudo -E bash -
+RUN apt-get install nodejs
+RUN RUN npm install pm2 -g
 # RUN systemctl enable redis-server.service -y
 #RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo bash - && sudo apt-get update && sudo apt install nodejs -y && sudo npm install -g pm2
 COPY . /app/
