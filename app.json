@@ -1,0 +1,27 @@
+{
+    "name": "سورس تشاكي",
+    "description": "تشغيل سورس تشاكي عهيروكو",
+    "repository": "https://github.com/Devmhmd/TshakeV2",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg",
+    "keywords": ["virus", "python", "docker"],
+    "stack": "container"
+    "env": {
+      "TOKEN": {
+        "description": "توكنك",
+        "value": "",
+        "required": true
+      },
+      "SUDO": {
+        "description": "ايدي",
+        "value": "",
+        "required": true
+      }
+  },
+  "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "Eco"
+          }
+      },
+      "stack": "container"
+  }
