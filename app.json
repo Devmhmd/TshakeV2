@@ -4,23 +4,24 @@
     "repository": "https://github.com/Devmhmd/TshakeV2",
     "logo": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg",
     "keywords": ["virus", "python", "docker"],
-    "stack": "container"
+    "stack": "container",
     "env": {
       "TOKEN": {
         "description": "توكنك",
         "value": "",
-        "required": true
       },
       "SUDO": {
-        "description": "ايدي",
+        "description": "ايديك",
         "value": "",
-        "required": true
       }
-  },
-  "formation": {
+    },
+    "buildpacks": [{
+    "url": "https://github.com/heroku/heroku-buildpack-python.git"
+    }]
+      "formation": {
           "worker": {
               "quantity": 1,
-              "size": "Eco"
+              "size": "free"
           }
       },
       "stack": "container"
