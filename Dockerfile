@@ -15,7 +15,7 @@ RUN python3.7 -m pip install redis
 RUN apt-get install redis-server -y
 RUN apt install curl -y
 RUN apt-get install nodejs -y
-RUN npm install pm2 -g
+RUN npm install pm2
 # RUN systemctl enable redis-server.service -y
 #RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo bash - && sudo apt-get update && sudo apt install nodejs -y && sudo npm install -g pm2
 COPY . /app/
