@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 RUN apt-get update -y
-RUN add-apt-repository ppa:deadsnakes/ppa -y
+# RUN add-apt-repository ppa:deadsnakes/ppa -y
 RUN apt-get update -y
 RUN apt-get upgrade -y
 RUN apt install python3.7 -y -y
